@@ -36,7 +36,7 @@
       if (!accounts) { return }
       document.getElementById('')
       window.userWalletAddress = accounts[0]
-      console.log(window.userWalletAddress)
+
       $.ajax({
         url: '/auth/',
         type: 'POST',
@@ -44,7 +44,6 @@
           addr: accounts[0]
         },
         success:function(response){
-          console.log(response)
 
           if (response.status == 1) {
             window.location.href = '/auth/'
