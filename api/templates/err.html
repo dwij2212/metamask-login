@@ -7,15 +7,10 @@
 
     <body>
         <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-dark text-white">
-            {% if user %}
-                <h2>Welcome, {{user}}!</h2>
-                <hr style="width:40%", size="3", color=white>
-                <a href="/" onclick="signOutOfMetaMask()" class="btn btn-outline-danger">Sign Out</a>
-            {% else %}
-                <h1>{{ error }}!</h1>
-                <hr style="width:40%", size="3", color=white>
-                <a href="/" class="btn btn-primary">Try with another user.</a>
-            {% endif %} 
+
+            <h1>User not authenticated!</h1>
+            <hr style="width:40%", size="3", color=white>
+            <a href="/" class="btn btn-primary">Try with another user</a> 
 
         </div>
 
