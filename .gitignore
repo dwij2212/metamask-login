@@ -1,3 +1,4 @@
 db.sqlite*
 env/
 __pycache__/
+migrations/

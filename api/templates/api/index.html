@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>Web3 Metamask Login</title>
+  <title>Welcome!</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
@@ -12,7 +12,11 @@
     </button>
     <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
   </div>
-
+  <form action="/team_name_url/" method="post">
+    <label for="team_name">Enter name: </label>
+    <input id="team_name" type="text" name="name_field" value="Default name for team.">
+    <input type="submit" value="OK">
+</form>
   <script>
     window.userWalletAddress = null
     const loginButton = document.getElementById('loginButton')
